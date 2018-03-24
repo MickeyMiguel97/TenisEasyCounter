@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tt"
+    tools:context="com.example.yanirayanes.teniseasycounter.MainActivity">
+
+    <TextView
+        android:id="@+id/auno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="75sp"
+        android:layout_marginLeft="120sp"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/buno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="75sp"
+        android:layout_marginRight="120sp"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/ados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ta"
+        android:layout_below="@+id/dos"
+        android:layout_marginStart="16dp"
+        android:text="0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/bdos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buno"
+        android:layout_below="@+id/dos"
+        android:text="0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/uno"
+        android:onClick="a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:layout_marginTop="110sp"
+        android:layout_marginLeft="80sp"/>
+
+    <Button
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uno"
+        android:layout_alignBottom="@+id/uno"
+        android:layout_alignStart="@+id/cuatro"
+        android:onClick="b"
+        android:text="^"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/uno"
+        android:layout_below="@+id/ados"
+        android:layout_marginTop="14dp"
+        android:onClick="c"
+        android:text="^"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <Button
+        android:id="@+id/cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tres"
+        android:layout_alignBottom="@+id/tres"
+        android:layout_marginStart="54dp"
+        android:layout_toEndOf="@+id/uno"
+        android:onClick="d"
+        android:text="^"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tres"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/ta"
+        android:onClick="r"
+        android:text="RESET"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/ta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM A"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="100sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM B"
+        android:layout_marginTop="50sp"
+        android:layout_alignBaseline="@id/ta"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_marginRight="100sp" />
+
+</RelativeLayout>
